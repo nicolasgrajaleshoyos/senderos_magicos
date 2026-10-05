@@ -1,0 +1,13 @@
+/* botones */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  padding: .9rem 1.7rem; border-radius: 999px; font-weight: 700; text-decoration: none;
+  font-size: .95rem; letter-spacing: .03em; transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-principal { background: var(--verde); color: var(--sobre-oscuro); }
+.btn-principal:hover { background: var(--selva); }
+.btn-secundario { border: 1.5px solid var(--verde); color: var(--verde); }
+.btn-secundario:hover { background: var(--verde); color: var(--sobre-oscuro); }
+:root[data-theme="oscuro"] .btn-secundario { color: var(--mostaza); border-color: var(--mostaza); }
+:root[data-theme="oscuro"] .btn-secundario:hover { background: var(--mostaza); color: var(--cafe-fondo); }

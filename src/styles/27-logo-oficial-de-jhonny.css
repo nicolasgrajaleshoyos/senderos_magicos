@@ -1,0 +1,7 @@
+/* logo oficial de Jhonny */
+.logo-img { display: block; height: 58px; width: auto; }
+.pie .logo-img { height: 84px; }
+.logo:has(.logo-img)::after { display: none; }
+.logo:has(.logo-img) { padding-bottom: 0; line-height: 0; }
+.logo-img { height: 84px; }
+@media (max-width: 600px) { .logo-img { height: 64px; } }

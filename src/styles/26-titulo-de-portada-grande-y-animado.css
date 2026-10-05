@@ -1,0 +1,7 @@
+/* título de portada: grande y animado */
+.hero h1 .l1, .hero h1 .l2, .hero h1 .l3 { display: inline-block; animation: sube .9s cubic-bezier(.2,.7,.2,1) both; }
+.hero h1 .l2 { animation-delay: .15s; background: linear-gradient(100deg, var(--terracota) 35%, var(--mostaza) 50%, var(--terracota) 65%); background-size: 250%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: sube .9s cubic-bezier(.2,.7,.2,1) .15s both, brillo-texto 5s linear 1.2s infinite; }
+.hero h1 .l3 { display: block; animation-delay: .35s; }
+@keyframes sube { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: none; } }
+@keyframes brillo-texto { from { background-position: 100%; } to { background-position: -100%; } }
+@media (min-width: 1000px) { .hero h1 { font-size: clamp(3.6rem, 5.8vw, 5.8rem); } }

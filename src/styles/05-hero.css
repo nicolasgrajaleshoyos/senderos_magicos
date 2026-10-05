@@ -1,0 +1,22 @@
+/* hero */
+.hero {
+  padding: 2.5rem 0 0;
+  min-height: calc(100vh - 80px);
+  display: flex; flex-direction: column; justify-content: center;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(201,150,43,.18), transparent 40%),
+    radial-gradient(circle at 5% 90%, rgba(94,127,79,.14), transparent 40%),
+    var(--crema);
+}
+.hero-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 3rem; align-items: center; margin-bottom: 3rem; }
+.pill {
+  display: inline-block; border: 1px solid var(--mostaza); color: var(--tinta);
+  padding: .4rem 1rem; font-size: .76rem; letter-spacing: .16em; text-transform: uppercase; border-radius: 999px;
+}
+.hero h1 { margin: 1.4rem 0 1.6rem; display: flex; flex-direction: column; }
+.hero h1 .l1 { color: var(--tinta); }
+.hero h1 .l2 { color: var(--terracota); font-style: italic; }
+.hero h1 .l3 { color: var(--verde); }
+:root[data-theme="oscuro"] .hero h1 .l3 { color: var(--mostaza); }
+.hero .lead { margin-bottom: 2.2rem; }
+.acciones { display: flex; gap: .9rem; flex-wrap: wrap; }

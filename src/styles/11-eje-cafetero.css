@@ -1,0 +1,10 @@
+/* eje cafetero */
+.cafetero { background: var(--cafe-fondo); color: var(--cafe-texto); }
+.cafetero h2, .cafetero h3 { color: var(--cafe-texto); }
+.cafetero .kicker { color: var(--cafe-acento); }
+.cafetero .card { background: var(--cafe-tarjeta); border-color: var(--cafe-borde); box-shadow: none; color: var(--cafe-texto); }
+.cafetero .card:hover { box-shadow: none; background: var(--cafe-tarjeta); }
+.cafetero .card p { opacity: .85; }
+.cafetero .etiqueta { color: var(--cafe-acento); }
+.cafetero .icono { background: var(--cafe-borde) !important; }
+.cafetero .encabezado .lead { opacity: .8; }

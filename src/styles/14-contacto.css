@@ -1,0 +1,10 @@
+/* contacto */
+.contacto {
+  text-align: center; background: var(--verde); color: var(--sobre-oscuro);
+  margin: 0 20px; padding: 5rem 1.5rem; border-radius: 28px;
+}
+.contacto h2 { color: var(--sobre-oscuro); }
+.contacto .kicker { color: var(--mostaza); }
+.contacto p { max-width: 52ch; margin: 1rem auto 2.2rem; opacity: .9; }
+.contacto .btn-principal { background: var(--mostaza); color: var(--cafe-fondo); }
+.contacto .btn-principal:hover { background: var(--sobre-oscuro); }

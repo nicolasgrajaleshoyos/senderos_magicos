@@ -1,0 +1,21 @@
+/* secciones */
+section { padding: 6rem 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.6rem; }
+.card {
+  background: var(--papel); padding: 2rem; border-radius: 18px; overflow: hidden;
+  border: 1px solid rgba(127,127,127,.15); box-shadow: 0 14px 36px -24px var(--sombra);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 20px 44px -22px var(--sombra); }
+.card-foto { margin: -2rem -2rem 1.4rem; }
+.card-foto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.card-foto figcaption { font-size: .7rem; opacity: .6; padding: .4rem 1rem; }
+.icono {
+  width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.card p { margin-top: .6rem; font-size: .97rem; opacity: .85; }
+.etiqueta {
+  display: inline-block; margin-top: 1.1rem; font-size: .74rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .16em; color: var(--terracota);
+}

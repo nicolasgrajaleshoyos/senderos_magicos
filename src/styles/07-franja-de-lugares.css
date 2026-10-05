@@ -1,0 +1,13 @@
+/* franja de lugares */
+.marquee {
+  background: var(--verde); color: var(--sobre-oscuro);
+  padding: 1.1rem 0; overflow: hidden; white-space: nowrap;
+}
+.marquee-pista { display: inline-flex; animation: pasa 40s linear infinite; }
+.marquee-pista span { display: inline-flex; }
+.marquee b {
+  font-family: var(--serif); font-style: italic; font-size: 1.5rem; font-weight: 500;
+  padding: 0 1.2rem; text-transform: none;
+}
+.marquee b::after { content: "·"; margin-left: 2.4rem; color: var(--mostaza); font-style: normal; }
+@keyframes pasa { to { transform: translateX(-50%); } }

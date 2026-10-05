@@ -1,0 +1,23 @@
+/* tema claro (por defecto) */
+:root {
+  --crema: #F7F1E5;
+  --papel: #FFFBF3;
+  --arena: #EFE5D2;
+  --tinta: #3B2A20;
+  --cafe-fondo: #1F4D3A;
+  --cafe-texto: #F7F1E5;
+  --cafe-acento: #E0B255;
+  --cafe-tarjeta: rgba(255,251,243,.08);
+  --cafe-borde: rgba(255,251,243,.2);
+  --sobre-oscuro: #F7F1E5;
+  --verde: #1F4D3A;
+  --selva: #5E7F4F;
+  --mostaza: #C9962B;
+  --azul: #1E3A5F;
+  --rosa-viejo: #A8456B;
+  --terracota: #B5532F;
+  --header: rgba(247,241,229,.92);
+  --sombra: rgba(59,42,32,.35);
+  --texto: "Manrope", system-ui, sans-serif;
+  --serif: "Fraunces", Georgia, serif;
+}

@@ -1,0 +1,7 @@
+/* póster en marco de arco */
+.sticker {
+  padding: 14px; background: var(--papel);
+  border-radius: 220px 220px 18px 18px;
+  box-shadow: 0 30px 60px -28px var(--sombra);
+}
+.sticker img { width: 100%; height: auto; border-radius: 206px 206px 8px 8px; }

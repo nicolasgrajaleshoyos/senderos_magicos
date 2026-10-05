@@ -1,0 +1,12 @@
+/* qué hacer */
+.zonas { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.2rem; }
+.zona { background: var(--papel); border: 1px solid rgba(127,127,127,.15); border-radius: 18px; padding: 1.6rem; overflow: hidden; }
+.zona-sin-foto { border-top: 4px solid var(--mostaza); }
+.zona-foto { margin: -1.6rem -1.6rem 1.2rem; }
+.zona-foto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.zona-foto figcaption { font-size: .68rem; opacity: .6; padding: .4rem 1rem; }
+.zona p { margin-top: .5rem; font-size: .95rem; opacity: .85; }
+.subtitulo-mini { margin-top: 3.5rem; font-size: 1.7rem; }
+.grupo { margin: 2.4rem 0 1rem; font-size: 1.5rem; color: var(--terracota); }
+#destinos .zonas { margin-bottom: .5rem; }
+.actividades { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; margin-top: 1.4rem; }

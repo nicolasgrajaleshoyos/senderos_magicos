@@ -1,0 +1,6 @@
+/* animación del logo de Jhonny */
+.logo-img { animation: logo-entra 1s cubic-bezier(.2,.8,.2,1) both, logo-flota 4s ease-in-out 1s infinite; transition: transform .4s ease; }
+.logo:hover .logo-img { transform: rotate(-8deg) scale(1.06); animation-play-state: paused; }
+.pie .logo-img { animation: logo-entra 1s cubic-bezier(.2,.8,.2,1) both, logo-flota 5s ease-in-out 1s infinite; }
+@keyframes logo-entra { from { opacity: 0; transform: scale(.4) rotate(-120deg); } to { opacity: 1; transform: none; } }
+@keyframes logo-flota { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }

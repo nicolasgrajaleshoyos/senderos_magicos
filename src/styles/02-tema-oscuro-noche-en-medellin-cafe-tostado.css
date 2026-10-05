@@ -1,0 +1,49 @@
+/* tema oscuro: noche en Medellín, café tostado */
+:root[data-theme="oscuro"] {
+  --crema: #17110D;
+  --papel: #241B15;
+  --arena: #1E1612;
+  --tinta: #F1E6D4;
+  --cafe-fondo: #2A1F18;
+  --cafe-texto: #F7F1E5;
+  --cafe-acento: #E0B255;
+  --cafe-tarjeta: rgba(255,251,243,.06);
+  --cafe-borde: rgba(255,251,243,.14);
+  --sobre-oscuro: #F7F1E5;
+  --verde: #2E6B4E;
+  --selva: #7FA872;
+  --mostaza: #E0B255;
+  --azul: #7FA3D9;
+  --terracota: #E08A6B;
+  --header: rgba(23,17,13,.92);
+  --sombra: rgba(0,0,0,.5);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--crema);
+  color: var(--tinta);
+  font-family: var(--texto);
+  font-size: 17px;
+  line-height: 1.65;
+  overflow-x: hidden;
+  transition: background .3s ease, color .3s ease;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+.wrap { width: min(1160px, 100% - 40px); margin-inline: auto; }
+.mt { margin-top: 1rem; }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.05; color: var(--tinta); }
+h1 { font-size: clamp(4rem, 9vw, 7.2rem); }
+h2 { font-size: clamp(2rem, 4.6vw, 3.4rem); }
+@media (min-width: 600px) { h2 { white-space: nowrap; } }
+h3 { font-size: clamp(1.6rem, 2.2vw, 1.9rem); font-weight: 600; line-height: 1.15; }
+.kicker {
+  display: inline-block; font-weight: 700; letter-spacing: .22em; text-transform: uppercase;
+  font-size: .74rem; color: var(--terracota); margin-bottom: 1rem;
+}
+.lead { font-size: 1.1rem; max-width: 62ch; opacity: .85; }
+.encabezado { margin-bottom: 3rem; max-width: 100%; }
+.encabezado .lead { margin-top: 1rem; }

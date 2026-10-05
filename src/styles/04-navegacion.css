@@ -1,0 +1,39 @@
+/* navegación */
+header {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--header); backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(127,127,127,.18);
+}
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; flex-wrap: wrap; }
+.marca { display: flex; align-items: center; gap: 1rem; }
+.tema {
+  width: 42px; height: 42px; border-radius: 50%; cursor: pointer;
+  display: grid; place-items: center; background: transparent; color: var(--tinta);
+  border: 1.5px solid var(--mostaza); transition: transform .2s ease, background .2s ease;
+}
+.tema:hover { transform: rotate(18deg); background: rgba(201,150,43,.15); }
+.tema svg { width: 20px; height: 20px; }
+.logo {
+  position: relative; display: inline-block; padding-bottom: .4rem;
+  font-family: var(--serif); font-size: clamp(2.1rem, 3.6vw, 2.9rem); font-weight: 700; line-height: 1;
+  letter-spacing: .01em; text-decoration: none; color: var(--verde);
+}
+.logo::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; border-radius: 4px;
+  background: linear-gradient(90deg, var(--mostaza) 0 45%, var(--azul) 45% 70%, var(--terracota) 70%);
+}
+:root[data-theme="oscuro"] .logo { color: var(--sobre-oscuro); }
+.logo span { color: var(--terracota); font-style: italic; margin-left: .3rem; }
+:root[data-theme="oscuro"] .logo span { color: var(--mostaza); }
+nav ul { list-style: none; display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; }
+nav a {
+  position: relative; padding: .4rem 0; text-decoration: none;
+  font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--tinta);
+  transition: color .2s ease;
+}
+nav a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px;
+  background: var(--mostaza); transform: scaleX(0); transform-origin: left; transition: transform .3s ease;
+}
+nav a:hover { color: var(--terracota); }
+nav a:hover::after { transform: scaleX(1); }

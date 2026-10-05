@@ -1,0 +1,8 @@
+/* comidas típicas */
+.comidas { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.comida { background: var(--papel); border-radius: 16px; overflow: hidden; border: 1px solid rgba(127,127,127,.15); }
+.comida img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.comida figcaption { display: flex; flex-direction: column; gap: .3rem; padding: .9rem 1rem 1rem; }
+.comida strong { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; }
+.comida span { font-size: .88rem; opacity: .85; }
+.comida small { font-size: .66rem; opacity: .6; margin-top: .3rem; }

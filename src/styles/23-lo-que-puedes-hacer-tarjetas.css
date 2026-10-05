@@ -1,0 +1,9 @@
+/* lo que puedes hacer: tarjetas */
+.actividades { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; margin-top: 1.4rem; }
+.actividad { position: relative; background: color-mix(in srgb, var(--c) 12%, var(--papel)); border: 1px solid color-mix(in srgb, var(--c) 30%, transparent); border-radius: 18px; padding: 1.6rem 1.5rem 1.5rem; overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; }
+.actividad:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -26px var(--sombra); }
+.actividad::before { content: ""; position: absolute; left: 0; top: 0; right: 0; height: 6px; background: var(--c); }
+.actividad-num { font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: var(--c); }
+.actividad-zona { display: block; margin-top: .4rem; font-size: .68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--c); }
+.actividad h3 { font-size: 1.5rem; margin: .5rem 0 .5rem; }
+.actividad p { font-size: .95rem; opacity: .85; }

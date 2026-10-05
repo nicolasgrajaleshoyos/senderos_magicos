@@ -1,0 +1,16 @@
+/* tours */
+.paquetes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.8rem; }
+.paquete { position: relative; padding-top: 2.6rem; display: flex; flex-direction: column; overflow: visible; }
+.paquete.destacado { background: var(--verde); color: var(--sobre-oscuro); }
+.paquete.destacado h3, .paquete.destacado .lead { color: var(--sobre-oscuro); }
+.paquete.destacado .btn-principal { background: var(--mostaza); color: var(--cafe-fondo); }
+.paquete.destacado .btn-principal:hover { background: var(--sobre-oscuro); }
+.paquete .tag {
+  position: absolute; top: -13px; left: 2rem; background: var(--terracota); color: var(--sobre-oscuro);
+  font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  padding: .35rem .9rem; border-radius: 999px;
+}
+.paquete ul { list-style: none; margin: 1rem 0 1.6rem; flex: 1; }
+.paquete li { padding: .4rem 0 .4rem 1.6rem; position: relative; }
+.paquete li::before { content: "—"; position: absolute; left: 0; color: var(--mostaza); }
+.paquete .btn { width: 100%; }

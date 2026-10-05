@@ -1,0 +1,9 @@
+/* sección del guía: información completa */
+.guia-texto .lead { margin-top: .9rem; }
+.beneficios-guia { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; margin: 2rem 0 2.2rem; }
+.beneficio { display: flex; gap: .9rem; align-items: flex-start; background: var(--papel); border: 1px solid rgba(127,127,127,.15); border-radius: 16px; padding: 1.1rem 1.2rem; }
+.beneficio h3 { font-size: 1.3rem; margin-bottom: .25rem; }
+.beneficio p { font-size: .92rem; opacity: .85; }
+.beneficio-icono { flex: none; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--arena); font-size: 1.3rem; }
+.guia-acciones { margin-top: 0; }
+@media (max-width: 860px) { .guia-foto { max-width: 420px; margin: 0 auto; } }
