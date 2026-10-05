@@ -1,21 +1,38 @@
-# bun-react-tailwind-template
+# bun-react-template
 
-To install dependencies:
+A minimal React + Tailwind starter running on [Bun](https://bun.com).
+
+## Requirements
+
+- [Bun](https://bun.com) (created with `bun init` in v1.3.11)
+
+## Getting started
 
 ```bash
+# 1. Install dependencies
 bun install
-```
 
-To start a development server:
-
-```bash
+# 2. Start the development server (hot reload)
 bun dev
 ```
 
-To run for production:
+## Scripts
 
-```bash
-bun start
+| Command             | Description                                  |
+| ------------------- | -------------------------------------------- |
+| `bun dev`           | Start the dev server with hot reload         |
+| `bun start`         | Run the app in production mode               |
+| `bun run build`     | Build the project                            |
+| `bun test`          | Run the unit tests in `tests/`               |
+| `bun run test:e2e`  | Run the end-to-end smoke test in `e2e/`      |
+
+## Project structure
+
 ```
-
-This project was created using `bun init` in bun v1.3.11. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+.
+├── src/          # Application source (entry point: src/index.ts)
+├── tests/        # Unit tests
+├── e2e/          # End-to-end tests
+├── build.ts      # Build script
+└── package.json
+```
