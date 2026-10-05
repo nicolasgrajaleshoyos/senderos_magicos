@@ -1,4 +1,4 @@
-import guiaFoto from '../guia.png'
+import guiaFoto from '../guia.jpg'
 import { MENSAJE_GENERAL } from '../config/contacto'
 import { construirEnlaceWhatsApp } from '../lib/whatsapp'
 import { beneficiosGuia } from '../data/tours'

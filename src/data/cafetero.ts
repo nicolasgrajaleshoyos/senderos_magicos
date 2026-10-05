@@ -18,7 +18,7 @@ import jardin from '../fotos/jardin.jpg'
 import jerico from '../fotos/jerico.jpg'
 import sanrafael from '../fotos/sanrafael.jpg'
 import cocorna from '../fotos/cocorna.jpg'
-import rioclaro from '../fotos/rioclaro.png'
+import rioclaro from '../fotos/rioclaro.jpg'
 import sanfelix from '../fotos/sanfelix.jpg'
 
 export const tarjetasCafetero: readonly TarjetaCafetera[] = [

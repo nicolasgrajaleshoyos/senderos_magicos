@@ -1,4 +1,4 @@
-import poster from '../poster.png'
+import poster from '../poster.jpg'
 import { MENSAJE_GENERAL } from '../config/contacto'
 import { construirEnlaceWhatsApp } from '../lib/whatsapp'
 import { FranjaLugares } from './FranjaLugares'
