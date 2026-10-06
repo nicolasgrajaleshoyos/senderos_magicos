@@ -1,6 +1,6 @@
 #!/usr/bin/env bun
 import { existsSync } from "fs";
-import { rm } from "fs/promises";
+import { cp, rm } from "fs/promises";
 import path from "path";
 
 if (process.argv.includes("--help") || process.argv.includes("-h")) {
@@ -144,6 +144,9 @@ const result = await Bun.build({
   },
   ...cliConfig,
 });
+
+// Archivos estáticos sueltos (robots.txt, sitemap.xml, og.jpg) que no pasan por el bundler
+if (existsSync("public")) await cp("public", outdir, { recursive: true });
 
 const end = performance.now();
 
