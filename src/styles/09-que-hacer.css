@@ -3,7 +3,7 @@
 .zona { background: var(--papel); border: 1px solid rgba(127,127,127,.15); border-radius: 18px; padding: 1.6rem; overflow: hidden; }
 .zona-sin-foto { border-top: 4px solid var(--mostaza); }
 .zona-foto { margin: -1.6rem -1.6rem 1.2rem; }
-.zona-foto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.zona-foto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: rgba(128, 128, 128, .15); }
 .zona-foto figcaption { font-size: .68rem; opacity: .6; padding: .4rem 1rem; }
 .zona p { margin-top: .5rem; font-size: .95rem; opacity: .85; }
 .subtitulo-mini { margin-top: 3.5rem; font-size: 1.7rem; }
