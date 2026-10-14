@@ -6,7 +6,7 @@ export function LugarCard({ nombre, texto, foto, credito }: Lugar) {
     <article className={`zona ${foto ? '' : 'zona-sin-foto'}`}>
       {foto && (
         <figure className="zona-foto">
-          <img src={foto} alt={nombre} loading="lazy" decoding="async" />
+          <img src={foto} alt={nombre} decoding="async" />
           <figcaption>{credito}</figcaption>
         </figure>
       )}

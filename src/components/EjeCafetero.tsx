@@ -14,7 +14,7 @@ export function EjeCafetero() {
             <article className="card" key={tarjeta.titulo}>
               {tarjeta.foto ? (
                 <figure className="card-foto">
-                  <img src={tarjeta.foto} alt={tarjeta.titulo} loading="lazy" />
+                  <img decoding="async" src={tarjeta.foto} alt={tarjeta.titulo} />
                   <figcaption>{tarjeta.credito}</figcaption>
                 </figure>
               ) : (

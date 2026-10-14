@@ -7,7 +7,7 @@ export function Comidas() {
       <div className="comidas">
         {comidasMedellin.map((comida) => (
           <figure className="comida" key={comida.nombre}>
-            <img src={comida.foto} alt={comida.nombre} loading="lazy" />
+            <img decoding="async" src={comida.foto} alt={comida.nombre} />
             <figcaption>
               <strong>{comida.nombre}</strong>
               <span>{comida.texto}</span>

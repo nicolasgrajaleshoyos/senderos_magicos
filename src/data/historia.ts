@@ -1,12 +1,12 @@
 import type { Slide } from './tipos'
 import { CREDITOS as C } from './creditos'
-import pueblito from '../fotos/pueblito.jpg'
-import ferro from '../fotos/ferro.jpg'
-import escobar from '../fotos/escobar.jpg'
-import comuna13 from '../fotos/comuna13b.jpg'
-import metrocable from '../fotos/metrocable.jpg'
-import escaleras from '../fotos/escal.jpg'
-import parques from '../fotos/rios.jpg'
+import pueblito from '../fotos/pueblito.webp'
+import ferro from '../fotos/ferro.webp'
+import escobar from '../fotos/escobar.webp'
+import comuna13 from '../fotos/comuna13b.webp'
+import metrocable from '../fotos/metrocable.webp'
+import escaleras from '../fotos/escal.webp'
+import parques from '../fotos/rios.webp'
 
 export const slidesHistoria: readonly Slide[] = [
   { ano: '1616', titulo: 'Nace la villa', texto: 'Se funda la Villa de Nuestra Señora de la Candelaria de Medellín, en el valle de Aburrá.', foto: pueblito, credito: C.sajor, pie: 'Arquitectura antioqueña, en el Pueblito Paisa' },

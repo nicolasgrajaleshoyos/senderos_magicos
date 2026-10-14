@@ -1,4 +1,4 @@
-import poster from '../poster.jpg'
+import poster from '../poster.webp'
 import { MENSAJE_GENERAL } from '../config/contacto'
 import { construirEnlaceWhatsApp } from '../lib/whatsapp'
 import { FranjaLugares } from './FranjaLugares'
@@ -22,7 +22,7 @@ export function Hero() {
           </div>
         </div>
         <figure className="sticker">
-          <img src={poster} alt="Ilustración de Medellín con Metrocable, casas de colores, sombrero vueltiao, bandeja paisa, chiva, aguardiente y un caminante con canasta de arepas" width="1254" height="1254" />
+          <img fetchpriority="high" src={poster} alt="Ilustración de Medellín con Metrocable, casas de colores, sombrero vueltiao, bandeja paisa, chiva, aguardiente y un caminante con canasta de arepas" width="1254" height="1254" />
         </figure>
       </div>
       <FranjaLugares />

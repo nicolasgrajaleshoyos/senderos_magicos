@@ -32,7 +32,7 @@ export function Carrusel({ slides }: Props) {
       <div className="car-slide" key={actual.ano}>
         {actual.foto ? (
           <figure className="car-foto">
-            <img src={actual.foto} alt={actual.pie ?? actual.titulo} loading="lazy" />
+            <img decoding="async" src={actual.foto} alt={actual.pie ?? actual.titulo} />
             <figcaption>{actual.credito}</figcaption>
           </figure>
         ) : (

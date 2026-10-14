@@ -1,4 +1,4 @@
-import guiaFoto from '../guia.jpg'
+import guiaFoto from '../guia.webp'
 import { MENSAJE_GENERAL } from '../config/contacto'
 import { construirEnlaceWhatsApp } from '../lib/whatsapp'
 import { beneficiosGuia } from '../data/tours'
@@ -8,7 +8,7 @@ export function Guia() {
     <section id="guia">
       <div className="wrap guia">
         <figure className="guia-foto">
-          <img src={guiaFoto} alt="Jhonny, guía local en Medellín y el Eje Cafetero" loading="lazy" />
+          <img decoding="async" src={guiaFoto} alt="Jhonny, guía local en Medellín y el Eje Cafetero" />
         </figure>
         <div className="guia-texto">
           <span className="kicker">Tu guía</span>
