@@ -33,7 +33,7 @@ export const CREDITOS = {
   angel: 'Foto: Angel ortiz serrano · CC BY-SA 3.0 · Wikimedia Commons',
   policia: 'Foto: Policía Nacional de Colombia · Dominio público · Wikimedia Commons',
   secretaria: 'Foto: Secretaría de Movilidad de Medellín · CC BY 2.0 · Wikimedia Commons',
-  juanGomez: 'Foto: Juan Gómez · CC BY 2.0 · Wikimedia Commons',
+  tripadvisor: 'Foto: Tripadvisor · licencia por confirmar',
   sinConfirmar: 'Foto: enviada por el autor del sitio · licencia por confirmar',
   triptins: 'Foto: triptins.com · licencia por confirmar',
 } as const
